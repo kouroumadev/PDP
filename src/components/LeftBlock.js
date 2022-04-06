@@ -1,10 +1,10 @@
 import React from 'react'
 import Button from './Button';
 import Image from './Image';
-import photo from '../images/image.jpg'
+//import photo from '../images/image.jpg'
 //import styles from '../index.css'
 
-export default function LeftBlock(){
+export default function LeftBlock(props){
     
     
 
@@ -63,7 +63,7 @@ export default function LeftBlock(){
                                <div className="row mb-2">
                                    <div className="col-md-12">
                                        <Image 
-                                            src={photo}
+                                            src={props.image1}
 
                                         />
                                    </div>
@@ -71,28 +71,28 @@ export default function LeftBlock(){
                                <div className="row mb-2">
                                    <div className="col-md-12">
                                    <Image 
-                                        src={photo}
+                                        src={props.image1}
                                         />
                                    </div>
                                </div>
                                <div className="row mb-2">
                                    <div className="col-md-12">
                                    <Image 
-                                        src={photo}
+                                        src={props.image1}
                                         />
                                    </div>
                                </div>
                                <div className="row mb-2">
                                    <div className="col-md-12">
                                    <Image 
-                                        src={photo}
+                                        src={props.image1}
                                         />
                                    </div>
                                </div>    
                            </div> 
                            <div className="col-md-8">
                                 <img 
-                                    src={photo}
+                                    src={props.image2}
                                     alt=""
                                     style={img}
                                 />
