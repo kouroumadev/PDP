@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 //import Button from './Button';
 
-export default function RightBlock() {
+export default function RightBlock(props) {
 
     const [card, setCard] = useState(0)
 
@@ -28,8 +28,8 @@ export default function RightBlock() {
 
                 <div className="row mt-3">
                     <div className="col-md-8">
-                        <p style={{ fontSize: "2rem" }}>Product Name ABC</p>
-                        <p className="" style={{ fontSize: "0.8rem", marginTop: "-20px" }}>Product Category Name(Example Plywood)</p>
+                        <p style={{ fontSize: "2rem" }}>{props.name}</p>
+                        <p className="" style={{ fontSize: "0.8rem", marginTop: "-20px" }}>SKU: {props.sku}</p>
                     </div>
                     <div className="col-md-2">
                         <i className="fa fa-heart-o fa-2x float-right text-danger mt-3" aria-hidden="true"></i>
@@ -51,7 +51,7 @@ export default function RightBlock() {
                         <p className="text-danger"><u>Build My Project</u></p>
                     </div>
                     <div className="col-md-4">
-                        <p className="font-weight-bold" style={{ fontSize: "1rem" }}>$2110.00 <span className="font-weight-bold" style={{ fontSize: "0.7rem" }}>per sheet</span> </p>
+                        <p className="font-weight-bold" style={{ fontSize: "1rem" }}>${props.price} <span className="font-weight-bold" style={{ fontSize: "0.7rem" }}>per sheet</span> </p>
                     </div>
                 </div>
 
