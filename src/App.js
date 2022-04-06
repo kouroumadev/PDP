@@ -7,7 +7,6 @@ function App() {
 
   const [product, setProduct] = useState({
     name: "",
-    description: "",
     sku: "",
     price: "",
     image1: "",
